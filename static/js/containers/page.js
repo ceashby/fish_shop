@@ -18,9 +18,8 @@ class Page extends React.Component {
                 name: f.name,
                 friendly_name: f.friendly_name,
                 isInTank: false,
-                tankIsCompatibleIfAdded: true,
-                tankIsCompatibleIfRemoved: null,
-                isError: false
+                tankIsCompatibleIfAdded: true,   // Only used when CHECK_ALL_FISH_COMPATIBILITY is true
+                tankIsCompatibleIfRemoved: null, // Only used when CHECK_ALL_FISH_COMPATIBILITY is true
             })),
             tankIsCompatible: true,
             isLoading: false,

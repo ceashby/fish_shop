@@ -34,8 +34,8 @@ var fishes = [
         friendly_name: 'Bonnethead'
     },
     {
-        name: 'cichlnames',
-        friendly_name: 'Cichlname'
+        name: 'cichlids',
+        friendly_name: 'Cichlids'
     },
     {
         name: 'cleaner_shrimp',
