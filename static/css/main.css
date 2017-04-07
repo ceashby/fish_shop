@@ -1,0 +1,183 @@
+html *
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, button {
+    font-weight: 100;
+    margin-left: 20px
+}
+
+body, .body {
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+}
+
+button{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 100px;
+    border-color: royalblue;
+    border: 0;
+}
+
+button:enabled{
+    cursor:pointer;
+}
+
+button:hover:enabled{
+    background-color: royalblue;
+    color: white;
+}
+
+button:focus{
+    outline: none;
+}
+
+.frame{
+    height: 100%;
+    position: relative;
+}
+
+.shop {
+    width: 60%;
+    float: left;
+}
+
+.tank {
+    width: 40%;
+    float: left;
+}
+
+.banner{
+    z-index: 1;
+    /* bottom: 0; */
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    /* flex-shrink: 0; */
+    display: -webkit-flex;
+    display: flex;
+    width: calc(100% - 20px);
+    height: 100px;
+}
+
+.scroll-container{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.scroll-area{
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.shop-fish {
+    vertical-align: top;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.fish-incompatible {
+    background-color: rgba(255, 197, 195, 0.9);
+}
+
+.fish-text-container {
+    line-height: 195px;
+    height: 100%;
+    max-width: 100px;
+    top: 0;
+    text-align: right;
+    position: absolute;
+    right: 60px;
+}
+
+.fish-text {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.fish-image {
+    opacity: 0.8;
+    width: 200px;
+}
+
+.fish-image-small {
+    width: 20px;
+    position: relative;
+    top: 4px;
+}
+
+.add-button {
+    width: 40px;
+    position: absolute;
+    bottom: 20px;
+    font-size: 30px;
+    right: 20px;
+}
+
+.tank-fish {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 10px
+}
+
+.tank-fish > * {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.remove-button{
+    background: none;
+    color: #bb0000;
+}
+
+.remove-button:hover:enabled{
+    background: #bb0000;
+    color: white;
+}
+
+.buy-button{
+    margin: auto;
+    height: 120px;
+    font-size: 30px;
+    width: 120px;
+    white-space: pre-line;
+}
+
+.buy-button-small-text{
+    font-size: 20px;
+}
+
+.buy-banner{
+    bottom: 0;
+    height: 200px;
+}
+
+.tank-scroll-area{
+    margin-bottom: 200px;
+    margin-left: auto;
+}
+
+.tank-incompatible{
+    background-color: rgb(255, 226, 226);
+}
+
+.tank-incompatible-translucent{
+    background-color: rgba(255, 226, 226, 0.9);
+}
+
+.animated-fish{
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
