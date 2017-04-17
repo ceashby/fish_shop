@@ -22,9 +22,12 @@ SECRET_KEY = 'gb2_cel!z(=mxr5q8z2+bw018%mimz2+3e358hu*+jwm8+$+4$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TEMPLATE_DEBUG = True
+# TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['138.68.176.243']
+ALLOWED_HOSTS = [
+    '138.68.176.243',
+    '127.0.0.1'
+]
 
 
 # Application definition
@@ -33,7 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
+    # 'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders'
@@ -87,7 +90,18 @@ STATICFILES_DIRS = (
     'static',
 )
 
-TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'templates'),)
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'OPTIONS': {
+            'context_processors': [
+                'django.contrib.auth.context_processors.auth'
+            ],
+        },
+        'DIRS': (os.path.join(BASE_DIR,  'templates'),)
+    },
+]
+
 
 CORS_ORIGIN_WHITELIST = (
     'fishshop.attest.tech',
